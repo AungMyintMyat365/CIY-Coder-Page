@@ -9,13 +9,14 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url(https://static.wixstatic.com/media/8191be_cf56b470c54144d2b56c72b2f808a135~mv2.png/v1/fill/w_640,h_560,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8191be_cf56b470c54144d2b56c72b2f808a135~mv2.png);
-    background-repeat: no-repeat;
+    background-image: url(images/Mind\ Hack\ 2025\ Academic\ Desk.png);
+    background: rgba(12, 17, 92, 0.1);
+    
     background-size: cover; 
     background-position: center;
 }
 .container {
-background: rgba(55, 25, 255, 0.4); 
+
 padding: 20px 40px;
 border-radius: 10px;
 text-align: center;
@@ -24,11 +25,11 @@ text-align: center;
 h1 {
 margin: 0;
 font-size: 5rem;
-color: #33344;
+color: #ffffff;
 }
 
 .title-container{
-     display: grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
@@ -38,17 +39,7 @@ color: #33344;
     gap: 15px;
 }
 .smart-button {
-    width: 160px;
-    height: 50px;
-    background: linear-gradient(45deg, #007bff, #0056b3);
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 91, 187, 0.4);
+    
 }
 .smart-button:hover {
     transform: scale(1.1);
@@ -56,4 +47,114 @@ color: #33344;
 }
 .smart-button:active {
     transform: scale(0.95);
+
+
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    border-radius: 14px;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    ;
 }
+
+.bg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 190px;
+    height: 240px;
+    z-index: 2;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+}
+
+.blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color:black;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+    0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+
+    25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+
+    50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+
+    75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+
+    100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+}
+
+}
+
+
+/* From Uiverse.io by mi-series */ 
+.btn {
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #40B3A2;
+    min-width: 200px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    opacity: .95;
+  }
+  
+  .btn .animation {
+    border-radius: 100%;
+    animation: ripple 0.6s linear infinite;
+  }
+  
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    }
+  }
